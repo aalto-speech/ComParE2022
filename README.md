@@ -4,7 +4,7 @@ This repository provides the code for running the official baselines for the voc
 ## Getting the code
 Clone this repository together with its submodules and checkout the correct branch:
 ```bash
-git clone --recurse-submodules --branch KSF-C https://github.com/EIHW/ComParE2022
+git clone --recurse-submodules --branch KSF-C https://github.com/aalto-speech/ComParE2022
 ```
 
 ## Installation
