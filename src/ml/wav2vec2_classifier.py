@@ -59,7 +59,7 @@ def map_to_pred(batch):
 
 path_to_recs = "dist/wav/"
 
-model_link = "voidful/wav2vec2-xlsr-multilingual-56" #"jonatasgrosman/wav2vec2-large-xlsr-53-german"
+model_link = "voidful/wav2vec2-xlsr-multilingual-56" #"jonatasgrosman/wav2vec2-large-xlsr-53-german" for monolingual system
 feature_extractor = Wav2Vec2FeatureExtractor.from_pretrained(model_link, cache_dir="wav2vec2_cache/" )
 processor =  Wav2Vec2Processor.from_pretrained(model_link, cache_dir="wav2vec2_cache/" )
 
