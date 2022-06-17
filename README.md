@@ -58,7 +58,7 @@ dvc repro
 
 
 ## Best results on the development partition
-![alt text](visualisations/cms/wav2vec2_big_yaroslav/cm_devel.png)
+![alt text](visualisations/cms/wav2vec2_emotion/cm_devel.png)
 
 
 
