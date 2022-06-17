@@ -68,7 +68,7 @@ dvc repro
 | fusion                                | 28.7        | 38.3       |
 
 ### CM for best result on development partition:
-![alt text](visualisations/cms/svm/opensmile/cm_devel.png)
+![alt text](visualisations/cms/wav2vec2_big_yaroslav/cm_devel.png)
 
 
 
