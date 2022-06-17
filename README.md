@@ -1,5 +1,5 @@
 # ComParE22
-This repository provides the code for running the official baselines for ComParE2022.
+This repository provides the code for running the official baselines and Aalto's systems for ComParE2022.
 
 > Björn W. Schuller, Anton Batliner, Shahin Amiriparian, Christian Bergler, Maurice Gerczuk, Natalie Holz, Pauline Larrouy-Maestri, Sebastian Bayerl, Korbinian Riedhammer, Adria Mallol-Ragolta, Maria Pateraki, Harry Coppock, Ivan Kiskin, Marianne Sinka, Stephen Roberts, "The ACM Multimedia 2022 Computational Paralinguistics Challenge: Vocalisations, Stuttering, Activity, & Mosquitos," in *Proceedings of the 30th International Conference on Multimedia*, (Lisbon, Portugal), ACM, 2022.
 
