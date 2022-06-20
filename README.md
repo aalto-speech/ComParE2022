@@ -18,7 +18,9 @@ note = {to appear},
 
 ## Getting the code
 You can find the baseline code and instructions for each sub-challenge on a corresponding branch of this repository. 
+
 To run our **wav2vec2**-based systems, use the `ft_w2v2_classification_compare2022.py` script. 
+
 The VGGish + TCN system can be reproduced using the codes in the **VGGish+TCN branch**.
 
 
