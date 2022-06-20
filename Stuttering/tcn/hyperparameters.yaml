@@ -1,0 +1,104 @@
+# Seed needs to be set at top of yaml, before objects with parameters are made
+seed: 1234
+__set_seed: !apply:torch.manual_seed [1234]
+
+skip_training: True
+
+output_folder: pre-trained_models/output_folder_dev
+sentiment_encoder_file: !ref <output_folder>/sentiment_encoder.txt
+
+train_log: !ref <output_folder>/train_log.txt
+train_logger: !new:speechbrain.utils.train_logger.FileTrainLogger
+  save_file: !ref <output_folder>/train_log.txt
+
+
+wer_file: !ref <output_folder>/wer_test.txt
+cer_file: !ref <output_folder>/cer_test.txt
+
+decode_text_file: !ref <output_folder>/text_test.txt
+
+# Feature parameters
+sample_rate: 16000
+n_fft: 800
+n_mels: 40
+
+
+# Training params
+n_epochs: 350
+dataloader_options:
+  batch_size: 128
+  shuffle: True
+
+test_dataloader_options:
+  batch_size: 64
+  shuffle: false
+
+lr: 0.0001
+
+
+sentiment_encoder: !new:speechbrain.dataio.encoder.CategoricalEncoder
+
+
+dropout: 0.45
+vggish_embedding_dim: 128
+num_sentiments: 8
+
+
+compute_features: !new:speechbrain.lobes.features.Fbank
+  sample_rate: !ref <sample_rate>
+  n_fft: !ref <n_fft>
+  n_mels: !ref <n_mels>
+  win_length: 15
+
+
+# Feature normalization (mean and std)
+normalizer: !new:speechbrain.processing.features.InputNormalization
+    norm_type: global
+
+
+encoder: !new:model.TemporalConvNet
+      num_inputs: 3
+      num_channels: [!ref <vggish_embedding_dim>, !ref <vggish_embedding_dim>, !ref <vggish_embedding_dim>, !ref <vggish_embedding_dim>, !ref <vggish_embedding_dim>, !ref <vggish_embedding_dim>]
+      num_classes: !ref <num_sentiments>
+      kernel_size: 4
+      dropout: !ref <dropout>
+
+
+log_softmax: !new:speechbrain.nnet.activations.Softmax
+  apply_log: true
+
+
+opt_class: !name:torch.optim.Adam
+  lr: !ref <lr>
+
+
+lr_annealing: !new:speechbrain.nnet.schedulers.NewBobScheduler
+  initial_value: !ref <lr>
+  improvement_threshold: 0.0025
+  annealing_factor: 0.8
+  patient: 1000
+
+epoch_counter: !new:speechbrain.utils.epoch_loop.EpochCounter
+  limit: !ref <n_epochs>
+
+
+# Functions that compute the statistics to track during the validation step.
+accuracy_computer: !name:speechbrain.utils.Accuracy.AccuracyStats
+
+
+modules:
+  encoder: !ref <encoder>
+  normalizer: !ref <normalizer>
+
+
+model: !new:torch.nn.ModuleList
+    - - !ref <encoder>
+
+
+checkpointer: !new:speechbrain.utils.checkpoints.Checkpointer
+  checkpoints_dir: !ref <output_folder>
+  recoverables:
+    model: !ref <model>
+    scheduler: !ref <lr_annealing>
+    normalizer: !ref <normalizer>
+    counter: !ref <epoch_counter>

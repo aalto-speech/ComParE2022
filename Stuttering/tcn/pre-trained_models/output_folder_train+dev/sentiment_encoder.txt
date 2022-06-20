@@ -1,0 +1,10 @@
+'Prolongation' => 0
+'no_disfluencies' => 1
+'Fillers' => 2
+'Block' => 3
+'Modified' => 4
+'SoundRepetition' => 5
+'WordRepetition' => 6
+'Garbage' => 7
+================
+'starting_index' => 0
