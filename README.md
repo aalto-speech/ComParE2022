@@ -12,7 +12,7 @@ The `utils` directory contains scripts for preparing the data.
 
 `prepare_data.py` formats the data in a JSON format needed for SpeechBrain.
 
-The `pre-trained_model` directory contains checkpoints of the for the pre-trained models. To change the model that you want to use, you need to set the proper path of the `output_folder` in the `hyperparamters.yaml` file.
+The `pre-trained_model` directory contains checkpoints for the pre-trained models. To change the model that you want to use, you need to set the proper path of the `output_folder` in the `hyperparamters.yaml` file.
 
 To run the experiments, use:
 
