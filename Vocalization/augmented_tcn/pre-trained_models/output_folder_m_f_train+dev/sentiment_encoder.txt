@@ -1,0 +1,8 @@
+'fear' => 0
+'pleasure' => 1
+'anger' => 2
+'achievement' => 3
+'pain' => 4
+'surprise' => 5
+================
+'starting_index' => 0

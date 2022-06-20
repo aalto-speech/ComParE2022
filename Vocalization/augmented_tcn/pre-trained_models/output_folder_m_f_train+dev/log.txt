@@ -1,0 +1,1145 @@
+2022-06-07 14:25:38,580 - speechbrain.core - INFO - Beginning experiment!
+2022-06-07 14:25:38,581 - speechbrain.core - INFO - Experiment folder: output_folder
+2022-06-07 14:25:40,945 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+audeer==1.18.0
+audformat==0.14.2
+audinterface==0.8.1
+audiofile==1.1.0
+audiomentations==0.24.0
+audioread==2.1.9
+audobject==0.7.1
+audresample==1.1.0
+certifi==2022.5.18
+cffi==1.15.0
+charset-normalizer==2.0.12
+click==8.1.3
+cycler==0.11.0
+Cython==0.29.30
+decorator==5.1.1
+filelock==3.7.0
+fonttools==4.33.3
+huggingface-hub==0.6.0
+HyperPyYAML==1.0.1
+idna==3.3
+importlib-metadata==4.11.3
+iso-639==0.4.5
+joblib==1.1.0
+kiwisolver==1.4.2
+librosa==0.9.1
+llvmlite==0.38.0
+matplotlib==3.5.2
+numba==0.55.1
+numpy==1.21.6
+oyaml==1.0
+packaging==21.3
+pandas==1.3.5
+Pillow==9.1.1
+pkg_resources==0.0.0
+pooch==1.6.0
+pybind11==2.9.2
+pycparser==2.21
+pyparsing==3.0.9
+pyroomacoustics==0.6.0
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+requests==2.27.1
+resampy==0.2.2
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.7.3
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+SoundFile==0.10.3.post1
+sox==1.4.1
+speechbrain==0.5.11
+threadpoolctl==3.1.0
+torch==1.11.0
+torchaudio==0.11.0
+torchvggish==0.2
+tqdm==4.64.0
+typing_extensions==4.2.0
+urllib3==1.26.9
+zipp==3.8.0
+
+
+2022-06-07 14:25:43,213 - speechbrain.core - INFO - 1.1M trainable parameters in ASR
+2022-06-07 14:25:43,239 - speechbrain.dataio.encoder - INFO - Load called, but CategoricalEncoder is not empty. Loaded data will overwrite everything. This is normal if there is e.g. an unk label defined at init.
+2022-06-07 14:25:43,241 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from output_folder/sentiment_encoder.txt
+2022-06-07 14:25:43,249 - speechbrain.utils.checkpoints - INFO - Would load a checkpoint here, but none found yet.
+2022-06-07 14:25:43,249 - speechbrain.utils.epoch_loop - INFO - Going into epoch 1
+2022-06-07 14:25:48,693 - speechbrain.utils.train_logger - INFO - epoch: 1, lr: 1.00e-04 - train loss: 12.98 - valid loss: 3.57, valid ACC: 1.61e-01
+2022-06-07 14:25:49,014 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-25-48+00
+2022-06-07 14:25:49,035 - speechbrain.utils.epoch_loop - INFO - Going into epoch 2
+2022-06-07 14:25:52,281 - speechbrain.utils.train_logger - INFO - epoch: 2, lr: 1.00e-04 - train loss: 3.11 - valid loss: 1.95, valid ACC: 1.91e-01
+2022-06-07 14:25:52,583 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-25-52+00
+2022-06-07 14:25:52,639 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-25-48+00
+2022-06-07 14:25:52,639 - speechbrain.utils.epoch_loop - INFO - Going into epoch 3
+2022-06-07 14:25:55,894 - speechbrain.utils.train_logger - INFO - epoch: 3, lr: 1.00e-04 - train loss: 1.95 - valid loss: 1.80, valid ACC: 1.70e-01
+2022-06-07 14:25:56,210 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-25-55+00
+2022-06-07 14:25:56,258 - speechbrain.utils.epoch_loop - INFO - Going into epoch 4
+2022-06-07 14:25:59,520 - speechbrain.utils.train_logger - INFO - epoch: 4, lr: 1.00e-04 - train loss: 1.81 - valid loss: 1.79, valid ACC: 2.00e-01
+2022-06-07 14:25:59,868 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-25-59+00
+2022-06-07 14:25:59,970 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-25-52+00
+2022-06-07 14:25:59,990 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-25-55+00
+2022-06-07 14:25:59,990 - speechbrain.utils.epoch_loop - INFO - Going into epoch 5
+2022-06-07 14:26:03,233 - speechbrain.utils.train_logger - INFO - epoch: 5, lr: 1.00e-04 - train loss: 1.79 - valid loss: 1.79, valid ACC: 1.91e-01
+2022-06-07 14:26:03,624 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-26-03+00
+2022-06-07 14:26:03,700 - speechbrain.utils.epoch_loop - INFO - Going into epoch 6
+2022-06-07 14:26:06,967 - speechbrain.utils.train_logger - INFO - epoch: 6, lr: 1.00e-04 - train loss: 1.78 - valid loss: 1.78, valid ACC: 2.07e-01
+2022-06-07 14:26:07,293 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-26-06+00
+2022-06-07 14:26:07,423 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-26-03+00
+2022-06-07 14:26:07,442 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-25-59+00
+2022-06-07 14:26:07,442 - speechbrain.utils.epoch_loop - INFO - Going into epoch 7
+2022-06-07 14:26:10,699 - speechbrain.utils.train_logger - INFO - epoch: 7, lr: 1.00e-04 - train loss: 1.78 - valid loss: 1.78, valid ACC: 2.24e-01
+2022-06-07 14:26:11,013 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-26-10+00
+2022-06-07 14:26:11,122 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-26-06+00
+2022-06-07 14:26:11,123 - speechbrain.utils.epoch_loop - INFO - Going into epoch 8
+2022-06-07 14:26:14,377 - speechbrain.utils.train_logger - INFO - epoch: 8, lr: 1.00e-04 - train loss: 1.77 - valid loss: 1.77, valid ACC: 2.39e-01
+2022-06-07 14:26:14,704 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-26-14+00
+2022-06-07 14:26:14,824 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-26-10+00
+2022-06-07 14:26:14,824 - speechbrain.utils.epoch_loop - INFO - Going into epoch 9
+2022-06-07 14:26:18,089 - speechbrain.utils.train_logger - INFO - epoch: 9, lr: 1.00e-04 - train loss: 1.77 - valid loss: 1.76, valid ACC: 2.59e-01
+2022-06-07 14:26:18,404 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-26-18+00
+2022-06-07 14:26:18,533 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-26-14+00
+2022-06-07 14:26:18,534 - speechbrain.utils.epoch_loop - INFO - Going into epoch 10
+2022-06-07 14:26:21,875 - speechbrain.utils.train_logger - INFO - epoch: 10, lr: 1.00e-04 - train loss: 1.76 - valid loss: 1.75, valid ACC: 2.65e-01
+2022-06-07 14:26:22,232 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-26-21+00
+2022-06-07 14:26:22,372 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-26-18+00
+2022-06-07 14:26:22,373 - speechbrain.utils.epoch_loop - INFO - Going into epoch 11
+2022-06-07 14:26:25,644 - speechbrain.utils.train_logger - INFO - epoch: 11, lr: 1.00e-04 - train loss: 1.77 - valid loss: 1.74, valid ACC: 2.89e-01
+2022-06-07 14:26:25,997 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-26-25+00
+2022-06-07 14:26:26,148 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-26-21+00
+2022-06-07 14:26:26,148 - speechbrain.utils.epoch_loop - INFO - Going into epoch 12
+2022-06-07 14:26:29,405 - speechbrain.utils.train_logger - INFO - epoch: 12, lr: 1.00e-04 - train loss: 1.76 - valid loss: 1.73, valid ACC: 2.83e-01
+2022-06-07 14:26:29,705 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-26-29+00
+2022-06-07 14:26:29,844 - speechbrain.utils.epoch_loop - INFO - Going into epoch 13
+2022-06-07 14:26:33,090 - speechbrain.utils.train_logger - INFO - epoch: 13, lr: 1.00e-04 - train loss: 1.76 - valid loss: 1.73, valid ACC: 2.74e-01
+2022-06-07 14:26:33,451 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-26-33+00
+2022-06-07 14:26:33,683 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-26-29+00
+2022-06-07 14:26:33,683 - speechbrain.utils.epoch_loop - INFO - Going into epoch 14
+2022-06-07 14:26:36,956 - speechbrain.utils.train_logger - INFO - epoch: 14, lr: 1.00e-04 - train loss: 1.75 - valid loss: 1.72, valid ACC: 2.76e-01
+2022-06-07 14:26:37,302 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-26-36+00
+2022-06-07 14:26:37,552 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-26-33+00
+2022-06-07 14:26:37,553 - speechbrain.utils.epoch_loop - INFO - Going into epoch 15
+2022-06-07 14:26:40,817 - speechbrain.utils.train_logger - INFO - epoch: 15, lr: 1.00e-04 - train loss: 1.73 - valid loss: 1.72, valid ACC: 3.07e-01
+2022-06-07 14:26:41,112 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-26-40+00
+2022-06-07 14:26:41,375 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-26-36+00
+2022-06-07 14:26:41,394 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-26-25+00
+2022-06-07 14:26:41,394 - speechbrain.utils.epoch_loop - INFO - Going into epoch 16
+2022-06-07 14:26:44,643 - speechbrain.utils.train_logger - INFO - epoch: 16, lr: 1.00e-04 - train loss: 1.73 - valid loss: 1.71, valid ACC: 3.04e-01
+2022-06-07 14:26:44,953 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-26-44+00
+2022-06-07 14:26:45,137 - speechbrain.utils.epoch_loop - INFO - Going into epoch 17
+2022-06-07 14:26:48,389 - speechbrain.utils.train_logger - INFO - epoch: 17, lr: 1.00e-04 - train loss: 1.73 - valid loss: 1.70, valid ACC: 3.13e-01
+2022-06-07 14:26:48,709 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-26-48+00
+2022-06-07 14:26:49,002 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-26-44+00
+2022-06-07 14:26:49,021 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-26-40+00
+2022-06-07 14:26:49,021 - speechbrain.utils.epoch_loop - INFO - Going into epoch 18
+2022-06-07 14:26:52,274 - speechbrain.utils.train_logger - INFO - epoch: 18, lr: 1.00e-04 - train loss: 1.72 - valid loss: 1.70, valid ACC: 3.09e-01
+2022-06-07 14:26:52,662 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-26-52+00
+2022-06-07 14:26:52,868 - speechbrain.utils.epoch_loop - INFO - Going into epoch 19
+2022-06-07 14:26:56,133 - speechbrain.utils.train_logger - INFO - epoch: 19, lr: 1.00e-04 - train loss: 1.71 - valid loss: 1.69, valid ACC: 3.20e-01
+2022-06-07 14:26:56,459 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-26-56+00
+2022-06-07 14:26:56,769 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-26-48+00
+2022-06-07 14:26:56,784 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-26-52+00
+2022-06-07 14:26:56,785 - speechbrain.utils.epoch_loop - INFO - Going into epoch 20
+2022-06-07 14:27:00,044 - speechbrain.utils.train_logger - INFO - epoch: 20, lr: 1.00e-04 - train loss: 1.72 - valid loss: 1.69, valid ACC: 3.15e-01
+2022-06-07 14:27:00,404 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-27-00+00
+2022-06-07 14:27:00,629 - speechbrain.utils.epoch_loop - INFO - Going into epoch 21
+2022-06-07 14:27:03,888 - speechbrain.utils.train_logger - INFO - epoch: 21, lr: 1.00e-04 - train loss: 1.70 - valid loss: 1.68, valid ACC: 3.13e-01
+2022-06-07 14:27:04,286 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-27-03+00
+2022-06-07 14:27:04,636 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-27-00+00
+2022-06-07 14:27:04,636 - speechbrain.utils.epoch_loop - INFO - Going into epoch 22
+2022-06-07 14:27:07,904 - speechbrain.utils.train_logger - INFO - epoch: 22, lr: 1.00e-04 - train loss: 1.70 - valid loss: 1.68, valid ACC: 3.09e-01
+2022-06-07 14:27:08,210 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-27-07+00
+2022-06-07 14:27:08,574 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-27-03+00
+2022-06-07 14:27:08,575 - speechbrain.utils.epoch_loop - INFO - Going into epoch 23
+2022-06-07 14:27:11,838 - speechbrain.utils.train_logger - INFO - epoch: 23, lr: 1.00e-04 - train loss: 1.68 - valid loss: 1.68, valid ACC: 3.07e-01
+2022-06-07 14:27:12,143 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-27-11+00
+2022-06-07 14:27:12,522 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-27-07+00
+2022-06-07 14:27:12,522 - speechbrain.utils.epoch_loop - INFO - Going into epoch 24
+2022-06-07 14:27:15,782 - speechbrain.utils.train_logger - INFO - epoch: 24, lr: 1.00e-04 - train loss: 1.69 - valid loss: 1.67, valid ACC: 3.33e-01
+2022-06-07 14:27:16,104 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-27-15+00
+2022-06-07 14:27:16,496 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-27-11+00
+2022-06-07 14:27:16,515 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-26-56+00
+2022-06-07 14:27:16,515 - speechbrain.utils.epoch_loop - INFO - Going into epoch 25
+2022-06-07 14:27:19,779 - speechbrain.utils.train_logger - INFO - epoch: 25, lr: 1.00e-04 - train loss: 1.69 - valid loss: 1.66, valid ACC: 3.24e-01
+2022-06-07 14:27:20,065 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-27-19+00
+2022-06-07 14:27:20,343 - speechbrain.utils.epoch_loop - INFO - Going into epoch 26
+2022-06-07 14:27:23,598 - speechbrain.utils.train_logger - INFO - epoch: 26, lr: 1.00e-04 - train loss: 1.68 - valid loss: 1.66, valid ACC: 3.48e-01
+2022-06-07 14:27:23,954 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-27-23+00
+2022-06-07 14:27:24,381 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-27-15+00
+2022-06-07 14:27:24,400 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-27-19+00
+2022-06-07 14:27:24,400 - speechbrain.utils.epoch_loop - INFO - Going into epoch 27
+2022-06-07 14:27:27,631 - speechbrain.utils.train_logger - INFO - epoch: 27, lr: 1.00e-04 - train loss: 1.68 - valid loss: 1.66, valid ACC: 3.33e-01
+2022-06-07 14:27:27,959 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-27-27+00
+2022-06-07 14:27:28,251 - speechbrain.utils.epoch_loop - INFO - Going into epoch 28
+2022-06-07 14:27:31,488 - speechbrain.utils.train_logger - INFO - epoch: 28, lr: 1.00e-04 - train loss: 1.66 - valid loss: 1.66, valid ACC: 3.57e-01
+2022-06-07 14:27:31,834 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-27-31+00
+2022-06-07 14:27:32,284 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-27-23+00
+2022-06-07 14:27:32,303 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-27-27+00
+2022-06-07 14:27:32,303 - speechbrain.utils.epoch_loop - INFO - Going into epoch 29
+2022-06-07 14:27:35,591 - speechbrain.utils.train_logger - INFO - epoch: 29, lr: 1.00e-04 - train loss: 1.67 - valid loss: 1.65, valid ACC: 3.39e-01
+2022-06-07 14:27:35,929 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-27-35+00
+2022-06-07 14:27:36,244 - speechbrain.utils.epoch_loop - INFO - Going into epoch 30
+2022-06-07 14:27:39,518 - speechbrain.utils.train_logger - INFO - epoch: 30, lr: 1.00e-04 - train loss: 1.66 - valid loss: 1.65, valid ACC: 3.43e-01
+2022-06-07 14:27:39,821 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-27-39+00
+2022-06-07 14:27:40,302 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-27-35+00
+2022-06-07 14:27:40,302 - speechbrain.utils.epoch_loop - INFO - Going into epoch 31
+2022-06-07 14:27:43,549 - speechbrain.utils.train_logger - INFO - epoch: 31, lr: 1.00e-04 - train loss: 1.66 - valid loss: 1.64, valid ACC: 3.48e-01
+2022-06-07 14:27:43,936 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-27-43+00
+2022-06-07 14:27:44,434 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-27-39+00
+2022-06-07 14:27:44,435 - speechbrain.utils.epoch_loop - INFO - Going into epoch 32
+2022-06-07 14:27:47,702 - speechbrain.utils.train_logger - INFO - epoch: 32, lr: 1.00e-04 - train loss: 1.65 - valid loss: 1.64, valid ACC: 3.43e-01
+2022-06-07 14:27:48,051 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-27-47+00
+2022-06-07 14:27:48,564 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-27-43+00
+2022-06-07 14:27:48,564 - speechbrain.utils.epoch_loop - INFO - Going into epoch 33
+2022-06-07 14:27:51,818 - speechbrain.utils.train_logger - INFO - epoch: 33, lr: 1.00e-04 - train loss: 1.66 - valid loss: 1.63, valid ACC: 3.57e-01
+2022-06-07 14:27:52,115 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-27-51+00
+2022-06-07 14:27:52,621 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-27-47+00
+2022-06-07 14:27:52,637 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-27-31+00
+2022-06-07 14:27:52,637 - speechbrain.utils.epoch_loop - INFO - Going into epoch 34
+2022-06-07 14:27:55,902 - speechbrain.utils.train_logger - INFO - epoch: 34, lr: 1.00e-04 - train loss: 1.64 - valid loss: 1.63, valid ACC: 3.63e-01
+2022-06-07 14:27:56,245 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-27-55+00
+2022-06-07 14:27:56,618 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-27-51+00
+2022-06-07 14:27:56,618 - speechbrain.utils.epoch_loop - INFO - Going into epoch 35
+2022-06-07 14:27:59,870 - speechbrain.utils.train_logger - INFO - epoch: 35, lr: 1.00e-04 - train loss: 1.64 - valid loss: 1.63, valid ACC: 3.63e-01
+2022-06-07 14:28:00,209 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-27-59+00
+2022-06-07 14:28:00,608 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-27-55+00
+2022-06-07 14:28:00,608 - speechbrain.utils.epoch_loop - INFO - Going into epoch 36
+2022-06-07 14:28:03,920 - speechbrain.utils.train_logger - INFO - epoch: 36, lr: 1.00e-04 - train loss: 1.64 - valid loss: 1.62, valid ACC: 3.70e-01
+2022-06-07 14:28:04,255 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-28-03+00
+2022-06-07 14:28:04,660 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-27-59+00
+2022-06-07 14:28:04,661 - speechbrain.utils.epoch_loop - INFO - Going into epoch 37
+2022-06-07 14:28:07,919 - speechbrain.utils.train_logger - INFO - epoch: 37, lr: 1.00e-04 - train loss: 1.64 - valid loss: 1.62, valid ACC: 3.87e-01
+2022-06-07 14:28:08,220 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-28-07+00
+2022-06-07 14:28:08,636 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-28-03+00
+2022-06-07 14:28:08,636 - speechbrain.utils.epoch_loop - INFO - Going into epoch 38
+2022-06-07 14:28:11,873 - speechbrain.utils.train_logger - INFO - epoch: 38, lr: 1.00e-04 - train loss: 1.63 - valid loss: 1.61, valid ACC: 3.80e-01
+2022-06-07 14:28:12,229 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-28-11+00
+2022-06-07 14:28:12,626 - speechbrain.utils.epoch_loop - INFO - Going into epoch 39
+2022-06-07 14:28:15,537 - speechbrain.utils.train_logger - INFO - epoch: 39, lr: 1.00e-04 - train loss: 1.62 - valid loss: 1.60, valid ACC: 3.83e-01
+2022-06-07 14:28:15,852 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-28-15+00
+2022-06-07 14:28:16,417 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-28-11+00
+2022-06-07 14:28:16,418 - speechbrain.utils.epoch_loop - INFO - Going into epoch 40
+2022-06-07 14:28:19,558 - speechbrain.utils.train_logger - INFO - epoch: 40, lr: 1.00e-04 - train loss: 1.63 - valid loss: 1.60, valid ACC: 3.91e-01
+2022-06-07 14:28:19,898 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-28-19+00
+2022-06-07 14:28:20,529 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-28-15+00
+2022-06-07 14:28:20,548 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-28-07+00
+2022-06-07 14:28:20,549 - speechbrain.utils.epoch_loop - INFO - Going into epoch 41
+2022-06-07 14:28:23,647 - speechbrain.utils.train_logger - INFO - epoch: 41, lr: 1.00e-04 - train loss: 1.62 - valid loss: 1.60, valid ACC: 3.80e-01
+2022-06-07 14:28:23,986 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-28-23+00
+2022-06-07 14:28:24,420 - speechbrain.utils.epoch_loop - INFO - Going into epoch 42
+2022-06-07 14:28:27,351 - speechbrain.utils.train_logger - INFO - epoch: 42, lr: 1.00e-04 - train loss: 1.62 - valid loss: 1.60, valid ACC: 3.91e-01
+2022-06-07 14:28:27,759 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-28-27+00
+2022-06-07 14:28:28,369 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-28-23+00
+2022-06-07 14:28:28,388 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-28-19+00
+2022-06-07 14:28:28,388 - speechbrain.utils.epoch_loop - INFO - Going into epoch 43
+2022-06-07 14:28:31,398 - speechbrain.utils.train_logger - INFO - epoch: 43, lr: 1.00e-04 - train loss: 1.62 - valid loss: 1.60, valid ACC: 3.89e-01
+2022-06-07 14:28:31,696 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-28-31+00
+2022-06-07 14:28:32,116 - speechbrain.utils.epoch_loop - INFO - Going into epoch 44
+2022-06-07 14:28:35,072 - speechbrain.utils.train_logger - INFO - epoch: 44, lr: 1.00e-04 - train loss: 1.62 - valid loss: 1.59, valid ACC: 3.80e-01
+2022-06-07 14:28:35,383 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-28-35+00
+2022-06-07 14:28:36,025 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-28-31+00
+2022-06-07 14:28:36,025 - speechbrain.utils.epoch_loop - INFO - Going into epoch 45
+2022-06-07 14:28:39,191 - speechbrain.utils.train_logger - INFO - epoch: 45, lr: 1.00e-04 - train loss: 1.60 - valid loss: 1.58, valid ACC: 4.04e-01
+2022-06-07 14:28:39,589 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-28-39+00
+2022-06-07 14:28:40,296 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-28-35+00
+2022-06-07 14:28:40,315 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-28-27+00
+2022-06-07 14:28:40,315 - speechbrain.utils.epoch_loop - INFO - Going into epoch 46
+2022-06-07 14:28:43,571 - speechbrain.utils.train_logger - INFO - epoch: 46, lr: 1.00e-04 - train loss: 1.59 - valid loss: 1.58, valid ACC: 4.04e-01
+2022-06-07 14:28:43,971 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-28-43+00
+2022-06-07 14:28:44,483 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-28-39+00
+2022-06-07 14:28:44,483 - speechbrain.utils.epoch_loop - INFO - Going into epoch 47
+2022-06-07 14:28:47,747 - speechbrain.utils.train_logger - INFO - epoch: 47, lr: 1.00e-04 - train loss: 1.59 - valid loss: 1.57, valid ACC: 4.04e-01
+2022-06-07 14:28:48,016 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-28-47+00
+2022-06-07 14:28:48,536 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-28-43+00
+2022-06-07 14:28:48,537 - speechbrain.utils.epoch_loop - INFO - Going into epoch 48
+2022-06-07 14:28:51,802 - speechbrain.utils.train_logger - INFO - epoch: 48, lr: 1.00e-04 - train loss: 1.60 - valid loss: 1.57, valid ACC: 4.02e-01
+2022-06-07 14:28:52,164 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-28-51+00
+2022-06-07 14:28:52,661 - speechbrain.utils.epoch_loop - INFO - Going into epoch 49
+2022-06-07 14:28:55,929 - speechbrain.utils.train_logger - INFO - epoch: 49, lr: 1.00e-04 - train loss: 1.60 - valid loss: 1.57, valid ACC: 4.11e-01
+2022-06-07 14:28:56,197 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-28-55+00
+2022-06-07 14:28:56,952 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-28-47+00
+2022-06-07 14:28:56,972 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-28-51+00
+2022-06-07 14:28:56,972 - speechbrain.utils.epoch_loop - INFO - Going into epoch 50
+2022-06-07 14:29:00,208 - speechbrain.utils.train_logger - INFO - epoch: 50, lr: 1.00e-04 - train loss: 1.57 - valid loss: 1.56, valid ACC: 4.22e-01
+2022-06-07 14:29:00,501 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-29-00+00
+2022-06-07 14:29:01,052 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-28-55+00
+2022-06-07 14:29:01,053 - speechbrain.utils.epoch_loop - INFO - Going into epoch 51
+2022-06-07 14:29:04,308 - speechbrain.utils.train_logger - INFO - epoch: 51, lr: 1.00e-04 - train loss: 1.58 - valid loss: 1.56, valid ACC: 4.17e-01
+2022-06-07 14:29:04,582 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-29-04+00
+2022-06-07 14:29:05,106 - speechbrain.utils.epoch_loop - INFO - Going into epoch 52
+2022-06-07 14:29:08,348 - speechbrain.utils.train_logger - INFO - epoch: 52, lr: 1.00e-04 - train loss: 1.58 - valid loss: 1.55, valid ACC: 4.11e-01
+2022-06-07 14:29:08,679 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-29-08+00
+2022-06-07 14:29:09,457 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-29-04+00
+2022-06-07 14:29:09,457 - speechbrain.utils.epoch_loop - INFO - Going into epoch 53
+2022-06-07 14:29:12,676 - speechbrain.utils.train_logger - INFO - epoch: 53, lr: 1.00e-04 - train loss: 1.57 - valid loss: 1.55, valid ACC: 4.02e-01
+2022-06-07 14:29:12,991 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-29-12+00
+2022-06-07 14:29:13,817 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-29-08+00
+2022-06-07 14:29:13,817 - speechbrain.utils.epoch_loop - INFO - Going into epoch 54
+2022-06-07 14:29:17,081 - speechbrain.utils.train_logger - INFO - epoch: 54, lr: 1.00e-04 - train loss: 1.57 - valid loss: 1.55, valid ACC: 4.04e-01
+2022-06-07 14:29:17,393 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-29-17+00
+2022-06-07 14:29:18,239 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-29-12+00
+2022-06-07 14:29:18,239 - speechbrain.utils.epoch_loop - INFO - Going into epoch 55
+2022-06-07 14:29:21,491 - speechbrain.utils.train_logger - INFO - epoch: 55, lr: 1.00e-04 - train loss: 1.57 - valid loss: 1.54, valid ACC: 4.35e-01
+2022-06-07 14:29:21,861 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-29-21+00
+2022-06-07 14:29:22,714 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-29-17+00
+2022-06-07 14:29:22,734 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-29-00+00
+2022-06-07 14:29:22,734 - speechbrain.utils.epoch_loop - INFO - Going into epoch 56
+2022-06-07 14:29:25,978 - speechbrain.utils.train_logger - INFO - epoch: 56, lr: 1.00e-04 - train loss: 1.56 - valid loss: 1.53, valid ACC: 4.22e-01
+2022-06-07 14:29:26,347 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-29-25+00
+2022-06-07 14:29:26,945 - speechbrain.utils.epoch_loop - INFO - Going into epoch 57
+2022-06-07 14:29:30,197 - speechbrain.utils.train_logger - INFO - epoch: 57, lr: 1.00e-04 - train loss: 1.56 - valid loss: 1.53, valid ACC: 4.20e-01
+2022-06-07 14:29:30,775 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-29-30+00
+2022-06-07 14:29:31,660 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-29-25+00
+2022-06-07 14:29:31,660 - speechbrain.utils.epoch_loop - INFO - Going into epoch 58
+2022-06-07 14:29:34,921 - speechbrain.utils.train_logger - INFO - epoch: 58, lr: 1.00e-04 - train loss: 1.54 - valid loss: 1.53, valid ACC: 4.26e-01
+2022-06-07 14:29:35,278 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-29-34+00
+2022-06-07 14:29:36,148 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-29-30+00
+2022-06-07 14:29:36,149 - speechbrain.utils.epoch_loop - INFO - Going into epoch 59
+2022-06-07 14:29:39,392 - speechbrain.utils.train_logger - INFO - epoch: 59, lr: 1.00e-04 - train loss: 1.55 - valid loss: 1.52, valid ACC: 4.07e-01
+2022-06-07 14:29:39,720 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-29-39+00
+2022-06-07 14:29:40,634 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-29-34+00
+2022-06-07 14:29:40,635 - speechbrain.utils.epoch_loop - INFO - Going into epoch 60
+2022-06-07 14:29:43,896 - speechbrain.utils.train_logger - INFO - epoch: 60, lr: 1.00e-04 - train loss: 1.55 - valid loss: 1.53, valid ACC: 4.30e-01
+2022-06-07 14:29:44,222 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-29-43+00
+2022-06-07 14:29:45,147 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-29-39+00
+2022-06-07 14:29:45,148 - speechbrain.utils.epoch_loop - INFO - Going into epoch 61
+2022-06-07 14:29:48,415 - speechbrain.utils.train_logger - INFO - epoch: 61, lr: 1.00e-04 - train loss: 1.54 - valid loss: 1.51, valid ACC: 4.33e-01
+2022-06-07 14:29:48,715 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-29-48+00
+2022-06-07 14:29:49,654 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-29-43+00
+2022-06-07 14:29:49,654 - speechbrain.utils.epoch_loop - INFO - Going into epoch 62
+2022-06-07 14:29:52,914 - speechbrain.utils.train_logger - INFO - epoch: 62, lr: 1.00e-04 - train loss: 1.54 - valid loss: 1.51, valid ACC: 4.43e-01
+2022-06-07 14:29:53,311 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-29-52+00
+2022-06-07 14:29:54,268 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-29-21+00
+2022-06-07 14:29:54,288 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-29-48+00
+2022-06-07 14:29:54,288 - speechbrain.utils.epoch_loop - INFO - Going into epoch 63
+2022-06-07 14:29:57,531 - speechbrain.utils.train_logger - INFO - epoch: 63, lr: 1.00e-04 - train loss: 1.52 - valid loss: 1.50, valid ACC: 4.39e-01
+2022-06-07 14:29:57,853 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-29-57+00
+2022-06-07 14:29:58,520 - speechbrain.utils.epoch_loop - INFO - Going into epoch 64
+2022-06-07 14:30:01,778 - speechbrain.utils.train_logger - INFO - epoch: 64, lr: 1.00e-04 - train loss: 1.53 - valid loss: 1.49, valid ACC: 4.67e-01
+2022-06-07 14:30:02,149 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-30-01+00
+2022-06-07 14:30:03,134 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-29-52+00
+2022-06-07 14:30:03,153 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-29-57+00
+2022-06-07 14:30:03,154 - speechbrain.utils.epoch_loop - INFO - Going into epoch 65
+2022-06-07 14:30:06,450 - speechbrain.utils.train_logger - INFO - epoch: 65, lr: 1.00e-04 - train loss: 1.52 - valid loss: 1.50, valid ACC: 4.59e-01
+2022-06-07 14:30:06,898 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-30-06+00
+2022-06-07 14:30:07,585 - speechbrain.utils.epoch_loop - INFO - Going into epoch 66
+2022-06-07 14:30:10,826 - speechbrain.utils.train_logger - INFO - epoch: 66, lr: 1.00e-04 - train loss: 1.54 - valid loss: 1.50, valid ACC: 4.50e-01
+2022-06-07 14:30:11,117 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-30-10+00
+2022-06-07 14:30:12,128 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-30-06+00
+2022-06-07 14:30:12,129 - speechbrain.utils.epoch_loop - INFO - Going into epoch 67
+2022-06-07 14:30:15,394 - speechbrain.utils.train_logger - INFO - epoch: 67, lr: 1.00e-04 - train loss: 1.52 - valid loss: 1.48, valid ACC: 4.70e-01
+2022-06-07 14:30:15,712 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-30-15+00
+2022-06-07 14:30:16,738 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-30-10+00
+2022-06-07 14:30:16,758 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-30-01+00
+2022-06-07 14:30:16,758 - speechbrain.utils.epoch_loop - INFO - Going into epoch 68
+2022-06-07 14:30:20,043 - speechbrain.utils.train_logger - INFO - epoch: 68, lr: 1.00e-04 - train loss: 1.51 - valid loss: 1.47, valid ACC: 4.63e-01
+2022-06-07 14:30:20,404 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-30-20+00
+2022-06-07 14:30:21,126 - speechbrain.utils.epoch_loop - INFO - Going into epoch 69
+2022-06-07 14:30:24,380 - speechbrain.utils.train_logger - INFO - epoch: 69, lr: 1.00e-04 - train loss: 1.50 - valid loss: 1.46, valid ACC: 4.76e-01
+2022-06-07 14:30:24,697 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-30-24+00
+2022-06-07 14:30:25,738 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-30-20+00
+2022-06-07 14:30:25,758 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-30-15+00
+2022-06-07 14:30:25,758 - speechbrain.utils.epoch_loop - INFO - Going into epoch 70
+2022-06-07 14:30:29,009 - speechbrain.utils.train_logger - INFO - epoch: 70, lr: 1.00e-04 - train loss: 1.49 - valid loss: 1.46, valid ACC: 4.76e-01
+2022-06-07 14:30:29,313 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-30-29+00
+2022-06-07 14:30:30,047 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-30-24+00
+2022-06-07 14:30:30,047 - speechbrain.utils.epoch_loop - INFO - Going into epoch 71
+2022-06-07 14:30:33,314 - speechbrain.utils.train_logger - INFO - epoch: 71, lr: 1.00e-04 - train loss: 1.50 - valid loss: 1.46, valid ACC: 4.83e-01
+2022-06-07 14:30:33,632 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-30-33+00
+2022-06-07 14:30:34,403 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-30-29+00
+2022-06-07 14:30:34,403 - speechbrain.utils.epoch_loop - INFO - Going into epoch 72
+2022-06-07 14:30:37,664 - speechbrain.utils.train_logger - INFO - epoch: 72, lr: 1.00e-04 - train loss: 1.49 - valid loss: 1.44, valid ACC: 4.98e-01
+2022-06-07 14:30:38,061 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-30-37+00
+2022-06-07 14:30:38,837 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-30-33+00
+2022-06-07 14:30:38,837 - speechbrain.utils.epoch_loop - INFO - Going into epoch 73
+2022-06-07 14:30:42,090 - speechbrain.utils.train_logger - INFO - epoch: 73, lr: 1.00e-04 - train loss: 1.48 - valid loss: 1.44, valid ACC: 4.89e-01
+2022-06-07 14:30:42,408 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-30-42+00
+2022-06-07 14:30:43,180 - speechbrain.utils.epoch_loop - INFO - Going into epoch 74
+2022-06-07 14:30:46,443 - speechbrain.utils.train_logger - INFO - epoch: 74, lr: 1.00e-04 - train loss: 1.48 - valid loss: 1.43, valid ACC: 5.20e-01
+2022-06-07 14:30:46,787 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-30-46+00
+2022-06-07 14:30:47,920 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-30-42+00
+2022-06-07 14:30:47,939 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-30-37+00
+2022-06-07 14:30:47,939 - speechbrain.utils.epoch_loop - INFO - Going into epoch 75
+2022-06-07 14:30:51,224 - speechbrain.utils.train_logger - INFO - epoch: 75, lr: 1.00e-04 - train loss: 1.48 - valid loss: 1.42, valid ACC: 4.89e-01
+2022-06-07 14:30:51,522 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-30-51+00
+2022-06-07 14:30:52,306 - speechbrain.utils.epoch_loop - INFO - Going into epoch 76
+2022-06-07 14:30:55,587 - speechbrain.utils.train_logger - INFO - epoch: 76, lr: 1.00e-04 - train loss: 1.47 - valid loss: 1.42, valid ACC: 5.04e-01
+2022-06-07 14:30:55,897 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-30-55+00
+2022-06-07 14:30:57,057 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-30-51+00
+2022-06-07 14:30:57,057 - speechbrain.utils.epoch_loop - INFO - Going into epoch 77
+2022-06-07 14:31:00,316 - speechbrain.utils.train_logger - INFO - epoch: 77, lr: 1.00e-04 - train loss: 1.49 - valid loss: 1.41, valid ACC: 5.20e-01
+2022-06-07 14:31:00,669 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-31-00+00
+2022-06-07 14:31:01,846 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-30-55+00
+2022-06-07 14:31:01,865 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-30-46+00
+2022-06-07 14:31:01,865 - speechbrain.utils.epoch_loop - INFO - Going into epoch 78
+2022-06-07 14:31:05,135 - speechbrain.utils.train_logger - INFO - epoch: 78, lr: 1.00e-04 - train loss: 1.48 - valid loss: 1.41, valid ACC: 5.15e-01
+2022-06-07 14:31:05,456 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-31-05+00
+2022-06-07 14:31:06,280 - speechbrain.utils.epoch_loop - INFO - Going into epoch 79
+2022-06-07 14:31:09,544 - speechbrain.utils.train_logger - INFO - epoch: 79, lr: 1.00e-04 - train loss: 1.45 - valid loss: 1.40, valid ACC: 5.35e-01
+2022-06-07 14:31:10,064 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-31-09+00
+2022-06-07 14:31:11,272 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-31-05+00
+2022-06-07 14:31:11,291 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-31-00+00
+2022-06-07 14:31:11,291 - speechbrain.utils.epoch_loop - INFO - Going into epoch 80
+2022-06-07 14:31:14,545 - speechbrain.utils.train_logger - INFO - epoch: 80, lr: 1.00e-04 - train loss: 1.45 - valid loss: 1.39, valid ACC: 5.33e-01
+2022-06-07 14:31:14,845 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-31-14+00
+2022-06-07 14:31:15,675 - speechbrain.utils.epoch_loop - INFO - Going into epoch 81
+2022-06-07 14:31:18,939 - speechbrain.utils.train_logger - INFO - epoch: 81, lr: 1.00e-04 - train loss: 1.44 - valid loss: 1.37, valid ACC: 5.30e-01
+2022-06-07 14:31:19,307 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-31-18+00
+2022-06-07 14:31:20,553 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-31-14+00
+2022-06-07 14:31:20,554 - speechbrain.utils.epoch_loop - INFO - Going into epoch 82
+2022-06-07 14:31:23,788 - speechbrain.utils.train_logger - INFO - epoch: 82, lr: 1.00e-04 - train loss: 1.44 - valid loss: 1.39, valid ACC: 5.11e-01
+2022-06-07 14:31:24,099 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-31-23+00
+2022-06-07 14:31:25,341 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-31-18+00
+2022-06-07 14:31:25,341 - speechbrain.utils.epoch_loop - INFO - Going into epoch 83
+2022-06-07 14:31:28,579 - speechbrain.utils.train_logger - INFO - epoch: 83, lr: 1.00e-04 - train loss: 1.47 - valid loss: 1.37, valid ACC: 5.20e-01
+2022-06-07 14:31:28,849 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-31-28+00
+2022-06-07 14:31:30,112 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-31-23+00
+2022-06-07 14:31:30,112 - speechbrain.utils.epoch_loop - INFO - Going into epoch 84
+2022-06-07 14:31:33,370 - speechbrain.utils.train_logger - INFO - epoch: 84, lr: 1.00e-04 - train loss: 1.45 - valid loss: 1.37, valid ACC: 5.30e-01
+2022-06-07 14:31:33,725 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-31-33+00
+2022-06-07 14:31:34,994 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-31-28+00
+2022-06-07 14:31:34,995 - speechbrain.utils.epoch_loop - INFO - Going into epoch 85
+2022-06-07 14:31:38,247 - speechbrain.utils.train_logger - INFO - epoch: 85, lr: 1.00e-04 - train loss: 1.43 - valid loss: 1.35, valid ACC: 5.30e-01
+2022-06-07 14:31:38,561 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-31-38+00
+2022-06-07 14:31:39,835 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-31-33+00
+2022-06-07 14:31:39,836 - speechbrain.utils.epoch_loop - INFO - Going into epoch 86
+2022-06-07 14:31:43,077 - speechbrain.utils.train_logger - INFO - epoch: 86, lr: 1.00e-04 - train loss: 1.41 - valid loss: 1.35, valid ACC: 5.28e-01
+2022-06-07 14:31:43,406 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-31-43+00
+2022-06-07 14:31:44,708 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-31-38+00
+2022-06-07 14:31:44,708 - speechbrain.utils.epoch_loop - INFO - Going into epoch 87
+2022-06-07 14:31:47,966 - speechbrain.utils.train_logger - INFO - epoch: 87, lr: 1.00e-04 - train loss: 1.44 - valid loss: 1.34, valid ACC: 5.52e-01
+2022-06-07 14:31:48,290 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in output_folder/CKPT+2022-06-07+14-31-47+00
+2022-06-07 14:31:49,601 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-31-09+00
+2022-06-07 14:31:49,618 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in output_folder/CKPT+2022-06-07+14-31-43+00
+2022-06-07 14:31:56,446 - speechbrain.core - INFO - Beginning experiment!
+2022-06-07 14:31:56,447 - speechbrain.core - INFO - Experiment folder: output_folder
+2022-06-07 14:31:58,283 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+audeer==1.18.0
+audformat==0.14.2
+audinterface==0.8.1
+audiofile==1.1.0
+audiomentations==0.24.0
+audioread==2.1.9
+audobject==0.7.1
+audresample==1.1.0
+certifi==2022.5.18
+cffi==1.15.0
+charset-normalizer==2.0.12
+click==8.1.3
+cycler==0.11.0
+Cython==0.29.30
+decorator==5.1.1
+filelock==3.7.0
+fonttools==4.33.3
+huggingface-hub==0.6.0
+HyperPyYAML==1.0.1
+idna==3.3
+importlib-metadata==4.11.3
+iso-639==0.4.5
+joblib==1.1.0
+kiwisolver==1.4.2
+librosa==0.9.1
+llvmlite==0.38.0
+matplotlib==3.5.2
+numba==0.55.1
+numpy==1.21.6
+oyaml==1.0
+packaging==21.3
+pandas==1.3.5
+Pillow==9.1.1
+pkg_resources==0.0.0
+pooch==1.6.0
+pybind11==2.9.2
+pycparser==2.21
+pyparsing==3.0.9
+pyroomacoustics==0.6.0
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+requests==2.27.1
+resampy==0.2.2
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.7.3
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+SoundFile==0.10.3.post1
+sox==1.4.1
+speechbrain==0.5.11
+threadpoolctl==3.1.0
+torch==1.11.0
+torchaudio==0.11.0
+torchvggish==0.2
+tqdm==4.64.0
+typing_extensions==4.2.0
+urllib3==1.26.9
+zipp==3.8.0
+
+
+2022-06-07 14:32:00,580 - speechbrain.core - INFO - 1.1M trainable parameters in ASR
+2022-06-07 14:32:00,601 - speechbrain.dataio.encoder - INFO - Load called, but CategoricalEncoder is not empty. Loaded data will overwrite everything. This is normal if there is e.g. an unk label defined at init.
+2022-06-07 14:32:00,601 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from output_folder/sentiment_encoder.txt
+2022-06-07 14:32:00,611 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from output_folder/CKPT+2022-06-07+14-31-47+00
+2022-06-07 14:33:19,777 - speechbrain.core - INFO - Beginning experiment!
+2022-06-07 14:33:19,778 - speechbrain.core - INFO - Experiment folder: output_folder
+2022-06-07 14:33:21,607 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+audeer==1.18.0
+audformat==0.14.2
+audinterface==0.8.1
+audiofile==1.1.0
+audiomentations==0.24.0
+audioread==2.1.9
+audobject==0.7.1
+audresample==1.1.0
+certifi==2022.5.18
+cffi==1.15.0
+charset-normalizer==2.0.12
+click==8.1.3
+cycler==0.11.0
+Cython==0.29.30
+decorator==5.1.1
+filelock==3.7.0
+fonttools==4.33.3
+huggingface-hub==0.6.0
+HyperPyYAML==1.0.1
+idna==3.3
+importlib-metadata==4.11.3
+iso-639==0.4.5
+joblib==1.1.0
+kiwisolver==1.4.2
+librosa==0.9.1
+llvmlite==0.38.0
+matplotlib==3.5.2
+numba==0.55.1
+numpy==1.21.6
+oyaml==1.0
+packaging==21.3
+pandas==1.3.5
+Pillow==9.1.1
+pkg_resources==0.0.0
+pooch==1.6.0
+pybind11==2.9.2
+pycparser==2.21
+pyparsing==3.0.9
+pyroomacoustics==0.6.0
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+requests==2.27.1
+resampy==0.2.2
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.7.3
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+SoundFile==0.10.3.post1
+sox==1.4.1
+speechbrain==0.5.11
+threadpoolctl==3.1.0
+torch==1.11.0
+torchaudio==0.11.0
+torchvggish==0.2
+tqdm==4.64.0
+typing_extensions==4.2.0
+urllib3==1.26.9
+zipp==3.8.0
+
+
+2022-06-07 14:33:23,858 - speechbrain.core - INFO - 1.1M trainable parameters in ASR
+2022-06-07 14:33:23,883 - speechbrain.dataio.encoder - INFO - Load called, but CategoricalEncoder is not empty. Loaded data will overwrite everything. This is normal if there is e.g. an unk label defined at init.
+2022-06-07 14:33:23,884 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from output_folder/sentiment_encoder.txt
+2022-06-07 14:33:23,896 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from output_folder/CKPT+2022-06-07+14-31-47+00
+2022-06-07 14:35:30,900 - speechbrain.core - INFO - Beginning experiment!
+2022-06-07 14:35:30,901 - speechbrain.core - INFO - Experiment folder: output_folder
+2022-06-07 14:35:32,735 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+audeer==1.18.0
+audformat==0.14.2
+audinterface==0.8.1
+audiofile==1.1.0
+audiomentations==0.24.0
+audioread==2.1.9
+audobject==0.7.1
+audresample==1.1.0
+certifi==2022.5.18
+cffi==1.15.0
+charset-normalizer==2.0.12
+click==8.1.3
+cycler==0.11.0
+Cython==0.29.30
+decorator==5.1.1
+filelock==3.7.0
+fonttools==4.33.3
+huggingface-hub==0.6.0
+HyperPyYAML==1.0.1
+idna==3.3
+importlib-metadata==4.11.3
+iso-639==0.4.5
+joblib==1.1.0
+kiwisolver==1.4.2
+librosa==0.9.1
+llvmlite==0.38.0
+matplotlib==3.5.2
+numba==0.55.1
+numpy==1.21.6
+oyaml==1.0
+packaging==21.3
+pandas==1.3.5
+Pillow==9.1.1
+pkg_resources==0.0.0
+pooch==1.6.0
+pybind11==2.9.2
+pycparser==2.21
+pyparsing==3.0.9
+pyroomacoustics==0.6.0
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+requests==2.27.1
+resampy==0.2.2
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.7.3
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+SoundFile==0.10.3.post1
+sox==1.4.1
+speechbrain==0.5.11
+threadpoolctl==3.1.0
+torch==1.11.0
+torchaudio==0.11.0
+torchvggish==0.2
+tqdm==4.64.0
+typing_extensions==4.2.0
+urllib3==1.26.9
+zipp==3.8.0
+
+
+2022-06-07 14:35:35,006 - speechbrain.core - INFO - 1.1M trainable parameters in ASR
+2022-06-07 14:35:35,026 - speechbrain.dataio.encoder - INFO - Load called, but CategoricalEncoder is not empty. Loaded data will overwrite everything. This is normal if there is e.g. an unk label defined at init.
+2022-06-07 14:35:35,027 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from output_folder/sentiment_encoder.txt
+2022-06-07 14:35:35,036 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from output_folder/CKPT+2022-06-07+14-31-47+00
+2022-06-07 14:36:54,551 - speechbrain.core - INFO - Beginning experiment!
+2022-06-07 14:36:54,551 - speechbrain.core - INFO - Experiment folder: output_folder
+2022-06-07 14:36:56,164 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+audeer==1.18.0
+audformat==0.14.2
+audinterface==0.8.1
+audiofile==1.1.0
+audiomentations==0.24.0
+audioread==2.1.9
+audobject==0.7.1
+audresample==1.1.0
+certifi==2022.5.18
+cffi==1.15.0
+charset-normalizer==2.0.12
+click==8.1.3
+cycler==0.11.0
+Cython==0.29.30
+decorator==5.1.1
+filelock==3.7.0
+fonttools==4.33.3
+huggingface-hub==0.6.0
+HyperPyYAML==1.0.1
+idna==3.3
+importlib-metadata==4.11.3
+iso-639==0.4.5
+joblib==1.1.0
+kiwisolver==1.4.2
+librosa==0.9.1
+llvmlite==0.38.0
+matplotlib==3.5.2
+numba==0.55.1
+numpy==1.21.6
+oyaml==1.0
+packaging==21.3
+pandas==1.3.5
+Pillow==9.1.1
+pkg_resources==0.0.0
+pooch==1.6.0
+pybind11==2.9.2
+pycparser==2.21
+pyparsing==3.0.9
+pyroomacoustics==0.6.0
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+requests==2.27.1
+resampy==0.2.2
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.7.3
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+SoundFile==0.10.3.post1
+sox==1.4.1
+speechbrain==0.5.11
+threadpoolctl==3.1.0
+torch==1.11.0
+torchaudio==0.11.0
+torchvggish==0.2
+tqdm==4.64.0
+typing_extensions==4.2.0
+urllib3==1.26.9
+zipp==3.8.0
+
+
+2022-06-07 14:36:58,416 - speechbrain.core - INFO - 1.1M trainable parameters in ASR
+2022-06-07 14:36:58,445 - speechbrain.dataio.encoder - INFO - Load called, but CategoricalEncoder is not empty. Loaded data will overwrite everything. This is normal if there is e.g. an unk label defined at init.
+2022-06-07 14:36:58,445 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from output_folder/sentiment_encoder.txt
+2022-06-07 14:36:58,454 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from output_folder/CKPT+2022-06-07+14-31-47+00
+2022-06-07 14:52:55,366 - speechbrain.core - INFO - Beginning experiment!
+2022-06-07 14:52:55,367 - speechbrain.core - INFO - Experiment folder: output_folder_m_f_train+dev
+2022-06-07 14:52:57,710 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+audeer==1.18.0
+audformat==0.14.2
+audinterface==0.8.1
+audiofile==1.1.0
+audiomentations==0.24.0
+audioread==2.1.9
+audobject==0.7.1
+audresample==1.1.0
+certifi==2022.5.18
+cffi==1.15.0
+charset-normalizer==2.0.12
+click==8.1.3
+cycler==0.11.0
+Cython==0.29.30
+decorator==5.1.1
+filelock==3.7.0
+fonttools==4.33.3
+huggingface-hub==0.6.0
+HyperPyYAML==1.0.1
+idna==3.3
+importlib-metadata==4.11.3
+iso-639==0.4.5
+joblib==1.1.0
+kiwisolver==1.4.2
+librosa==0.9.1
+llvmlite==0.38.0
+matplotlib==3.5.2
+numba==0.55.1
+numpy==1.21.6
+oyaml==1.0
+packaging==21.3
+pandas==1.3.5
+Pillow==9.1.1
+pkg_resources==0.0.0
+pooch==1.6.0
+pybind11==2.9.2
+pycparser==2.21
+pyparsing==3.0.9
+pyroomacoustics==0.6.0
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+requests==2.27.1
+resampy==0.2.2
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.7.3
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+SoundFile==0.10.3.post1
+sox==1.4.1
+speechbrain==0.5.11
+threadpoolctl==3.1.0
+torch==1.11.0
+torchaudio==0.11.0
+torchvggish==0.2
+tqdm==4.64.0
+typing_extensions==4.2.0
+urllib3==1.26.9
+zipp==3.8.0
+
+
+2022-06-07 14:52:59,962 - speechbrain.core - INFO - 1.1M trainable parameters in ASR
+2022-06-07 14:52:59,979 - speechbrain.dataio.encoder - INFO - Load called, but CategoricalEncoder is not empty. Loaded data will overwrite everything. This is normal if there is e.g. an unk label defined at init.
+2022-06-07 14:52:59,981 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from output_folder_m_f_train+dev/sentiment_encoder.txt
+2022-06-07 14:52:59,993 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from output_folder_m_f_train+dev/CKPT+2022-06-07+14-31-47+00
+2022-06-07 14:53:40,368 - speechbrain.core - INFO - Beginning experiment!
+2022-06-07 14:53:40,368 - speechbrain.core - INFO - Experiment folder: output_folder_m_f_train+dev
+2022-06-07 14:53:42,826 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+audeer==1.18.0
+audformat==0.14.2
+audinterface==0.8.1
+audiofile==1.1.0
+audiomentations==0.24.0
+audioread==2.1.9
+audobject==0.7.1
+audresample==1.1.0
+certifi==2022.5.18
+cffi==1.15.0
+charset-normalizer==2.0.12
+click==8.1.3
+cycler==0.11.0
+Cython==0.29.30
+decorator==5.1.1
+filelock==3.7.0
+fonttools==4.33.3
+huggingface-hub==0.6.0
+HyperPyYAML==1.0.1
+idna==3.3
+importlib-metadata==4.11.3
+iso-639==0.4.5
+joblib==1.1.0
+kiwisolver==1.4.2
+librosa==0.9.1
+llvmlite==0.38.0
+matplotlib==3.5.2
+numba==0.55.1
+numpy==1.21.6
+oyaml==1.0
+packaging==21.3
+pandas==1.3.5
+Pillow==9.1.1
+pkg_resources==0.0.0
+pooch==1.6.0
+pybind11==2.9.2
+pycparser==2.21
+pyparsing==3.0.9
+pyroomacoustics==0.6.0
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+requests==2.27.1
+resampy==0.2.2
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.7.3
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+SoundFile==0.10.3.post1
+sox==1.4.1
+speechbrain==0.5.11
+threadpoolctl==3.1.0
+torch==1.11.0
+torchaudio==0.11.0
+torchvggish==0.2
+tqdm==4.64.0
+typing_extensions==4.2.0
+urllib3==1.26.9
+zipp==3.8.0
+
+
+2022-06-07 14:53:45,058 - speechbrain.core - INFO - 1.1M trainable parameters in ASR
+2022-06-07 14:53:45,080 - speechbrain.dataio.encoder - INFO - Load called, but CategoricalEncoder is not empty. Loaded data will overwrite everything. This is normal if there is e.g. an unk label defined at init.
+2022-06-07 14:53:45,081 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from output_folder_m_f_train+dev/sentiment_encoder.txt
+2022-06-07 14:53:45,089 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from output_folder_m_f_train+dev/CKPT+2022-06-07+14-31-47+00
+2022-06-07 14:53:45,124 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/speechbrain/dataio/encoder.py", line 446, in encode_label
+    return self.lab2ind[label]
+KeyError: '?'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "train.py", line 343, in <module>
+    main()
+  File "train.py", line 339, in main
+    asr_brain.evaluate_data(test_data, "ACC", hparams["test_dataloader_options"])
+  File "train.py", line 182, in evaluate_data
+    for batch in dataset:
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 530, in __next__
+    data = self._next_data()
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 570, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/speechbrain/dataio/dataset.py", line 165, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/speechbrain/utils/data_pipeline.py", line 455, in compute_outputs
+    return self._compute(data, self._exec_order, self.output_mapping)
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/speechbrain/utils/data_pipeline.py", line 487, in _compute
+    values = item(*args)  # Call the DynamicItem to produce output
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/speechbrain/utils/data_pipeline.py", line 154, in __call__
+    out = next(self.current_generator)
+  File "train.py", line 266, in text_pipeline
+    sentiments_encoded = hparams["sentiment_encoder"].encode_sequence_torch([sentiment])
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/speechbrain/dataio/encoder.py", line 512, in encode_sequence_torch
+    [self.encode_label(label, allow_unk) for label in sequence]
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/speechbrain/dataio/encoder.py", line 512, in <listcomp>
+    [self.encode_label(label, allow_unk) for label in sequence]
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/speechbrain/dataio/encoder.py", line 457, in encode_label
+    f"Cannot encode unknown label {label}. "
+KeyError: 'Cannot encode unknown label ?. You have not called add_unk() to add a special unk-label for unknown labels.'
+2022-06-07 14:54:15,130 - speechbrain.core - INFO - Beginning experiment!
+2022-06-07 14:54:15,130 - speechbrain.core - INFO - Experiment folder: output_folder_m_f_train+dev
+2022-06-07 14:54:16,706 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+audeer==1.18.0
+audformat==0.14.2
+audinterface==0.8.1
+audiofile==1.1.0
+audiomentations==0.24.0
+audioread==2.1.9
+audobject==0.7.1
+audresample==1.1.0
+certifi==2022.5.18
+cffi==1.15.0
+charset-normalizer==2.0.12
+click==8.1.3
+cycler==0.11.0
+Cython==0.29.30
+decorator==5.1.1
+filelock==3.7.0
+fonttools==4.33.3
+huggingface-hub==0.6.0
+HyperPyYAML==1.0.1
+idna==3.3
+importlib-metadata==4.11.3
+iso-639==0.4.5
+joblib==1.1.0
+kiwisolver==1.4.2
+librosa==0.9.1
+llvmlite==0.38.0
+matplotlib==3.5.2
+numba==0.55.1
+numpy==1.21.6
+oyaml==1.0
+packaging==21.3
+pandas==1.3.5
+Pillow==9.1.1
+pkg_resources==0.0.0
+pooch==1.6.0
+pybind11==2.9.2
+pycparser==2.21
+pyparsing==3.0.9
+pyroomacoustics==0.6.0
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+requests==2.27.1
+resampy==0.2.2
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.7.3
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+SoundFile==0.10.3.post1
+sox==1.4.1
+speechbrain==0.5.11
+threadpoolctl==3.1.0
+torch==1.11.0
+torchaudio==0.11.0
+torchvggish==0.2
+tqdm==4.64.0
+typing_extensions==4.2.0
+urllib3==1.26.9
+zipp==3.8.0
+
+
+2022-06-07 14:54:18,994 - speechbrain.core - INFO - 1.1M trainable parameters in ASR
+2022-06-07 14:54:19,016 - speechbrain.dataio.encoder - INFO - Load called, but CategoricalEncoder is not empty. Loaded data will overwrite everything. This is normal if there is e.g. an unk label defined at init.
+2022-06-07 14:54:19,016 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from output_folder_m_f_train+dev/sentiment_encoder.txt
+2022-06-07 14:54:19,024 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from output_folder_m_f_train+dev/CKPT+2022-06-07+14-31-47+00
+2022-06-08 11:37:02,120 - speechbrain.core - INFO - Beginning experiment!
+2022-06-08 11:37:02,121 - speechbrain.core - INFO - Experiment folder: output_folder_m_f_train+dev
+2022-06-08 11:37:04,562 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+audeer==1.18.0
+audformat==0.14.2
+audinterface==0.8.1
+audiofile==1.1.0
+audiomentations==0.24.0
+audioread==2.1.9
+audobject==0.7.1
+audresample==1.1.0
+certifi==2022.5.18
+cffi==1.15.0
+charset-normalizer==2.0.12
+click==8.1.3
+cycler==0.11.0
+Cython==0.29.30
+decorator==5.1.1
+filelock==3.7.0
+fonttools==4.33.3
+huggingface-hub==0.6.0
+HyperPyYAML==1.0.1
+idna==3.3
+importlib-metadata==4.11.3
+iso-639==0.4.5
+joblib==1.1.0
+kiwisolver==1.4.2
+librosa==0.9.1
+llvmlite==0.38.0
+matplotlib==3.5.2
+numba==0.55.1
+numpy==1.21.6
+oyaml==1.0
+packaging==21.3
+pandas==1.3.5
+Pillow==9.1.1
+pkg_resources==0.0.0
+pooch==1.6.0
+pybind11==2.9.2
+pycparser==2.21
+pyparsing==3.0.9
+pyroomacoustics==0.6.0
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+requests==2.27.1
+resampy==0.2.2
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.7.3
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+SoundFile==0.10.3.post1
+sox==1.4.1
+speechbrain==0.5.11
+threadpoolctl==3.1.0
+torch==1.11.0
+torchaudio==0.11.0
+torchvggish==0.2
+tqdm==4.64.0
+typing_extensions==4.2.0
+urllib3==1.26.9
+zipp==3.8.0
+
+
+2022-06-08 11:37:06,863 - speechbrain.core - INFO - 1.1M trainable parameters in ASR
+2022-06-08 11:37:06,886 - speechbrain.dataio.encoder - INFO - Load called, but CategoricalEncoder is not empty. Loaded data will overwrite everything. This is normal if there is e.g. an unk label defined at init.
+2022-06-08 11:37:06,888 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from output_folder_m_f_train+dev/sentiment_encoder.txt
+2022-06-08 11:37:06,904 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from output_folder_m_f_train+dev/CKPT+2022-06-07+14-31-47+00
+2022-06-08 11:37:07,016 - speechbrain.utils.epoch_loop - INFO - Going into epoch 88
+2022-06-08 11:37:08,767 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 342, in <module>
+    main()
+  File "train.py", line 332, in main
+    valid_loader_kwargs=hparams["dataloader_options"],
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/speechbrain/core.py", line 1032, in fit
+    for batch in t:
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/tqdm/std.py", line 1195, in __iter__
+    for obj in iterable:
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 530, in __next__
+    data = self._next_data()
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 570, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/speechbrain/dataio/dataset.py", line 165, in __getitem__
+    return self.pipeline.compute_outputs({"id": data_id, **data_point})
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/speechbrain/utils/data_pipeline.py", line 455, in compute_outputs
+    return self._compute(data, self._exec_order, self.output_mapping)
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/speechbrain/utils/data_pipeline.py", line 487, in _compute
+    values = item(*args)  # Call the DynamicItem to produce output
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/speechbrain/utils/data_pipeline.py", line 72, in __call__
+    return self.func(*args)
+  File "train.py", line 254, in audio_pipeline
+    sig = np.load(file_path, allow_pickle=True)
+  File "/m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/venv/lib/python3.7/site-packages/numpy/lib/npyio.py", line 451, in load
+    "Failed to interpret file %s as a pickle" % repr(file)) from e
+  File "/m/work/modules/automatic/anaconda/envs/aalto-ubuntu1804-generic/software/anaconda/2020-04-tf2/1b2b24f2/lib/python3.7/contextlib.py", line 524, in __exit__
+    raise exc_details[1]
+  File "/m/work/modules/automatic/anaconda/envs/aalto-ubuntu1804-generic/software/anaconda/2020-04-tf2/1b2b24f2/lib/python3.7/contextlib.py", line 509, in __exit__
+    if cb(*exc_details):
+  File "/m/work/modules/automatic/anaconda/envs/aalto-ubuntu1804-generic/software/anaconda/2020-04-tf2/1b2b24f2/lib/python3.7/contextlib.py", line 377, in _exit_wrapper
+    return cm_exit(cm, exc_type, exc, tb)
+KeyboardInterrupt
+2022-06-08 11:37:58,914 - speechbrain.core - INFO - Beginning experiment!
+2022-06-08 11:37:58,915 - speechbrain.core - INFO - Experiment folder: output_folder_m_f_train+dev
+2022-06-08 11:38:00,517 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+audeer==1.18.0
+audformat==0.14.2
+audinterface==0.8.1
+audiofile==1.1.0
+audiomentations==0.24.0
+audioread==2.1.9
+audobject==0.7.1
+audresample==1.1.0
+certifi==2022.5.18
+cffi==1.15.0
+charset-normalizer==2.0.12
+click==8.1.3
+cycler==0.11.0
+Cython==0.29.30
+decorator==5.1.1
+filelock==3.7.0
+fonttools==4.33.3
+huggingface-hub==0.6.0
+HyperPyYAML==1.0.1
+idna==3.3
+importlib-metadata==4.11.3
+iso-639==0.4.5
+joblib==1.1.0
+kiwisolver==1.4.2
+librosa==0.9.1
+llvmlite==0.38.0
+matplotlib==3.5.2
+numba==0.55.1
+numpy==1.21.6
+oyaml==1.0
+packaging==21.3
+pandas==1.3.5
+Pillow==9.1.1
+pkg_resources==0.0.0
+pooch==1.6.0
+pybind11==2.9.2
+pycparser==2.21
+pyparsing==3.0.9
+pyroomacoustics==0.6.0
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+requests==2.27.1
+resampy==0.2.2
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.7.3
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+SoundFile==0.10.3.post1
+sox==1.4.1
+speechbrain==0.5.11
+threadpoolctl==3.1.0
+torch==1.11.0
+torchaudio==0.11.0
+torchvggish==0.2
+tqdm==4.64.0
+typing_extensions==4.2.0
+urllib3==1.26.9
+zipp==3.8.0
+
+
+2022-06-08 11:38:03,056 - speechbrain.core - INFO - 1.1M trainable parameters in ASR
+2022-06-08 11:38:03,079 - speechbrain.dataio.encoder - INFO - Load called, but CategoricalEncoder is not empty. Loaded data will overwrite everything. This is normal if there is e.g. an unk label defined at init.
+2022-06-08 11:38:03,080 - speechbrain.dataio.encoder - DEBUG - Loaded categorical encoding from output_folder_m_f_train+dev/sentiment_encoder.txt
+2022-06-08 11:38:03,096 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from output_folder_m_f_train+dev/CKPT+2022-06-07+14-31-47+00

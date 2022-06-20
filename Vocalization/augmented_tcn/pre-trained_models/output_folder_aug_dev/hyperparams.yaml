@@ -1,0 +1,108 @@
+# Generated 2022-06-20 from:
+# /m/triton/scratch/elec/t405-puhe/p/porjazd1/ComParE2022/git_repo/ComParE2022/Vocalization/augmented_tcn/hyperparameters.yaml
+# yamllint disable
+# Seed needs to be set at top of yaml, before objects with parameters are made
+seed: 1234
+__set_seed: !apply:torch.manual_seed [1234]
+
+skip_training: true
+
+output_folder: pre-trained_models/output_folder_aug_dev
+sentiment_encoder_file: pre-trained_models/output_folder_aug_dev/sentiment_encoder.txt
+
+train_log: pre-trained_models/output_folder_aug_dev/train_log.txt
+train_logger: !new:speechbrain.utils.train_logger.FileTrainLogger
+  save_file: pre-trained_models/output_folder_aug_dev/train_log.txt
+
+
+wer_file: pre-trained_models/output_folder_aug_dev/wer_test.txt
+cer_file: pre-trained_models/output_folder_aug_dev/cer_test.txt
+
+decode_text_file: pre-trained_models/output_folder_aug_dev/text_test.txt
+
+# Feature parameters
+sample_rate: 44100
+n_fft: 800
+n_mels: 40
+
+
+# Training params
+n_epochs: 260
+dataloader_options:
+  batch_size: 128
+  shuffle: true
+
+test_dataloader_options:
+  batch_size: 64
+  shuffle: false
+
+lr: 0.0001
+label_smoothing: 0.1
+
+
+sentiment_encoder: !new:speechbrain.dataio.encoder.CategoricalEncoder
+
+
+dropout: 0.15
+vggish_embedding_dim: 128
+num_sentiments: 6
+
+
+compute_features: !new:speechbrain.lobes.features.Fbank
+  sample_rate: 44100
+  n_fft: 800
+  n_mels: 40
+  win_length: 15
+
+
+# Feature normalization (mean and std)
+normalizer: &id002 !new:speechbrain.processing.features.InputNormalization
+
+
+  norm_type: global
+
+
+encoder: &id001 !new:model.TemporalConvNet
+
+
+  num_inputs: 2
+  num_channels: [128, 128, 128, 128, 128, 128, 128, 128, 128]
+  num_classes: 6
+  kernel_size: 4
+  dropout: 0.15
+
+
+log_softmax: !new:speechbrain.nnet.activations.Softmax
+  apply_log: true
+
+
+opt_class: !name:torch.optim.Adam
+  lr: 0.0001
+
+
+lr_annealing: &id004 !new:speechbrain.nnet.schedulers.NewBobScheduler
+  initial_value: 0.0001
+  improvement_threshold: 0.0025
+  annealing_factor: 0.8
+  patient: 1000
+
+epoch_counter: &id005 !new:speechbrain.utils.epoch_loop.EpochCounter
+  limit: 260
+
+
+# Functions that compute the statistics to track during the validation step.
+accuracy_computer: !name:speechbrain.utils.Accuracy.AccuracyStats
+
+
+modules:
+  encoder: *id001
+  normalizer: *id002
+model: &id003 !new:torch.nn.ModuleList
+- - *id001
+checkpointer: !new:speechbrain.utils.checkpoints.Checkpointer
+  checkpoints_dir: pre-trained_models/output_folder_aug_dev
+  recoverables:
+    model: *id003
+    scheduler: *id004
+    normalizer: *id002
+    counter: *id005

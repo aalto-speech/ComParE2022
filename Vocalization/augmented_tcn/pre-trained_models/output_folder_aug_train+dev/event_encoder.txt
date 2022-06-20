@@ -1,0 +1,4 @@
+'background' => 0
+'mosquito' => 1
+================
+'starting_index' => 0
