@@ -24,4 +24,11 @@ To run our **wav2vec2**-based systems, use the `ft_w2v2_classification_compare20
 
 The VGGish + TCN system can be reproduced using the codes in the **VGGish+TCN branch**.
 
+## Links to the wav2vec2 models mentioned in the paper
 
+* $wav2vec2_{M}$: https://huggingface.co/facebook/wav2vec2-large-xlsr-53
+* $wav2vec2_{M}^{*}$: https://huggingface.co/voidful/wav2vec2-xlsr-multilingual-56
+* $wav2vec2_{M}^{de}$: https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-german
+* $wav2vec2_{L}^{de}$: https://huggingface.co/aware-ai/wav2vec2-xls-r-1b-5gram-german
+* $wav2vec2_{M}^{er}$: https://huggingface.co/superb/wav2vec2-large-superb-er
+* $wav2vec2_{S}^{de}$: https://huggingface.co/aware-ai/wav2vec2-base-german
