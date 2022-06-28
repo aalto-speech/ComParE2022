@@ -22,7 +22,7 @@ You can find the baseline code and instructions for each sub-challenge on a corr
 
 To run our **wav2vec2**-based systems, use the `ft_w2v2_classification_compare2022.py` script. 
 
-The VGGish + TCN system can be reproduced using the codes in the **VGGish+TCN branch**. The augmentation script (``utils/data_augmentation.py`) we used in our experiments can also be found in that branch.
+The VGGish + TCN system can be reproduced using the codes in the **VGGish+TCN branch**. The augmentation script (`utils/data_augmentation.py`) we used in our experiments can also be found in that branch.
 
 ## Links to the wav2vec2 models mentioned in the paper
 
